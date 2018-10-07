@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:weightSum="5"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        android:layout_weight="0.5">
+        <ImageView
+            android:id="@+id/sound"
+            android:layout_gravity="center"
+            android:src="@drawable/alarm"
+            android:padding="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/placeName"
+            android:textColor="@android:color/white"
+            android:hint="IGDTUW, Kashmere Gate"
+            android:textColorHint="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:ellipsize="end"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/share"
+            android:src="@drawable/share"
+            android:padding="18dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_height="0dp">
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="aarnav100.developer.indiragandhisafety.MapsActivity" />
+        <ImageView
+            android:id="@+id/people"
+            android:src="@mipmap/people2"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <ImageView
+            android:id="@+id/direc"
+            android:src="@mipmap/directions2"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <ImageView
+            android:id="@+id/fakecall"
+            android:src="@mipmap/fake_call"
+            android:layout_marginTop="320dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/review"
+            android:text="Check Reviews For This Place"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="@color/colorMain"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+</LinearLayout>
